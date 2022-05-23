@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <div className="nav">
+    <div className="nav">hello
       <span>
         <h3>
           <Link to={"/"}>Shopper</Link>
+          {/* <Link className="productLink" to={`/${d.id}`}></Link> */}
         </h3>
       </span>
       {/* Show follwing div only if we are not on /checkout page */}
