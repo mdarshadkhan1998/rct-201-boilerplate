@@ -24,8 +24,9 @@ export const useList = (arr:any) => {
     const reset = () =>{
         setList([...arr])
     }
-    const map = (el:any) =>{
-        console.log(typeof(el))
+    const map = (el:any) =>{       
+        setList([...list.map(el)])
+        // console.log(list)
     }
 
     return [list, { push, pop, clear, reset, map }]
